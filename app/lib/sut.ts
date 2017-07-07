@@ -1,3 +1,8 @@
-export function hello() {
-  return 'hello';
+class Sut {
+
+  doSomething() {
+    return 'crazy';
+  }
 }
+
+export { Sut }
