@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "...",
   "scripts": {
-    "pretest": "rm -rf dist ; tsc --outDIR dist --allowJs -rootDir app --experimentalDecorators app/*.ts app/**/*.ts",
+    "compile": "rm -rf dist ; tsc --experimentalDecorators -p app",
     "test": "mocha dist"
   },
   "dependencies": {
