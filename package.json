@@ -4,7 +4,7 @@
   "description": "...",
   "scripts": {
     "compile": "rm -rf dist ; tsc --experimentalDecorators -p app",
-    "test": "mocha dist --reporter min"
+    "test": "mocha dist"
   },
   "dependencies": {
     "typescript": "^2.2.2"
