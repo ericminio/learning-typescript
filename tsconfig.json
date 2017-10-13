@@ -1,7 +1,6 @@
 {
     "compileOnSave": true,
     "compilerOptions": {
-        "outDir": "../dist",
         "experimentalDecorators": true
     }
 }

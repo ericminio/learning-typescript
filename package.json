@@ -3,18 +3,17 @@
   "version": "1.0.0",
   "description": "...",
   "scripts": {
-    "compile": "rm -rf dist ; tsc --experimentalDecorators -p app",
-    "test": "mocha dist"
+    "test": "mocha --compilers ts:ts-node/register app "
   },
-  "dependencies": {
-    "typescript": "^2.2.2"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/chai": "^4.0.1",
     "@types/mocha": "^2.2.41",
     "chai": "^4.0.2",
     "mocha": "^3.4.2",
-    "mocha-typescript": "^1.1.7"
+    "mocha-typescript": "^1.1.10",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.5.3"
   },
   "engines": {
     "node": ">= 4.2.1",
