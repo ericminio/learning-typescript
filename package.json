@@ -3,13 +3,24 @@
   "version": "1.0.0",
   "description": "...",
   "scripts": {
-    "test": "mocha --compilers ts:ts-node/register app "
+    "test": "mocha --compilers ts:ts-node/register  app "
   },
-  "dependencies": {},
+  "dependencies": {
+    "@angular/core": "^4.4.5",
+    "@types/angular": "^1.6.32",
+    "rxjs": "^5.4.3",
+    "zone.js": "^0.8.18"
+  },
   "devDependencies": {
+    "@angular/common": "^4.4.5",
+    "@angular/compiler": "^4.4.5",
+    "@angular/platform-browser": "^4.4.5",
+    "@angular/platform-browser-dynamic": "^4.4.5",
     "@types/chai": "^4.0.1",
     "@types/mocha": "^2.2.41",
     "chai": "^4.0.2",
+    "core-js": "^2.5.1",
+    "jsdom": "^11.3.0",
     "mocha": "^3.4.2",
     "mocha-typescript": "^1.1.10",
     "ts-node": "^3.3.0",
