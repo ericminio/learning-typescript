@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'my-component',
-  template: '<label>{{ title }}</label>'
+  templateUrl: './page.html'
 })
 export class MyComponent {
     title = 'hello world';

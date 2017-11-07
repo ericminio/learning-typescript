@@ -9,7 +9,7 @@ describe('MyComponent', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [MyComponent]
-    });
+    }).compileComponents();
   });
 
   afterEach(() => {

@@ -15,5 +15,17 @@ require('zone.js');
 
 var testing = require('@angular/core/testing');
 var browser = require('@angular/platform-browser-dynamic/testing');
+var platform = browser.platformBrowserDynamicTesting();
 
-testing.TestBed.initTestEnvironment(browser.BrowserDynamicTestingModule, browser.platformBrowserDynamicTesting());
+testing.TestBed.initTestEnvironment(browser.BrowserDynamicTestingModule, platform);
+testing.TestBed.configureCompiler({
+  providers: [ {
+    provide:require('@angular/compiler').ResourceLoader,
+    useValue:{
+      get:function(url){
+        var content = require('fs').readFileSync('./app/lib/' + url).toString();
+        return content;
+      }
+  } }],
+  useJit: true
+});
